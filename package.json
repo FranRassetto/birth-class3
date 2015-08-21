@@ -1,0 +1,19 @@
+{
+  "name": "birth-class",
+  "version": "0.0.1",
+  "description": "Proyecto cloud computing",
+  "main": "app.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FranRassetto/birth-class3.git"
+  },
+  "author": "Fran Rassetto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FranRassetto/birth-class3/issues"
+  },
+  "homepage": "https://github.com/FranRassetto/birth-class3"
+}
