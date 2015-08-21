@@ -1,3 +1,3 @@
-# birth-class3
+# birthClass
 
-Repositorio para aplicacion de seminario de cloud computing. Pero ahora desde la Nube!
+a [Sails](http://sailsjs.org) application
