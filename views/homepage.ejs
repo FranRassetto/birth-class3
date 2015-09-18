@@ -76,7 +76,7 @@ setTimeout(function sunrise () {
 
 <!--Empezamos nueva HOME -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
 
 <head>
 
@@ -123,12 +123,12 @@ setTimeout(function sunrise () {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">La Fantabulos App del Fran V2.0</a>
+                <a class="navbar-brand page-scroll" href="#page-top" id="titulo">La Fantabulos App del Fran V2.0 {{nombre}}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right">{{
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -159,8 +159,8 @@ setTimeout(function sunrise () {
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Bienvenido a la Magica App</div>
-                <div class="intro-heading">Creada en el seminarion de Cloud Computing</div>
-                <a href="#services" class="page-scroll btn btn-xl">Saber Mas!</a>
+                <div class="intro-heading">{{nombre}}</div>
+                <a href="#services" id="botonSaberMas" class="page-scroll btn btn-xl">Saber Mas!</a>
             </div>
         </div>
     </header>
@@ -479,7 +479,7 @@ setTimeout(function sunrise () {
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contacto</h2>
+                    <h2 class="section-heading">Nos vamos a {{nombre}}</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
@@ -489,7 +489,7 @@ setTimeout(function sunrise () {
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name." ng-model="nombre">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
