@@ -3,7 +3,8 @@ describe('La Homepage', function()
          it('deberia tener el titulo correcto', function()
           {
             //browser.get('https://birth-class-franrassetto.c9.io/');
-            browser.get('http://localhost:8080');
+            //browser.get('http://localhost:8080');
+            browser.get('/');
             element(by.id('name')).sendKeys('fran');
             element(by.id('botonSaberMas')).click();
             
