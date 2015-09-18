@@ -6,7 +6,7 @@ describe('La Homepage', function()
             //browser.get('http://localhost:8080');
             browser.get('/');
             element(by.id('name')).sendKeys('fran');
-            element(by.id('botonSaberMas')).click();
+            //element(by.id('botonSaberMas')).click();
             
             var loginMessage = element(by.id('titulo'));
             expect(loginMessage.isPresent()).toBe(true);
